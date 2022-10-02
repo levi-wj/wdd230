@@ -31,7 +31,27 @@ header nav a {
     background-color: #275a7d;
 }
 
-#logo-example {
+.logo-example {
     background-color: lightgray;
-    width: 10em;
+    height: 10em;
+}
+
+.design-table {
+    border: 1px solid darkgray;
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 3px;
+}
+
+.design-table th {
+    border-bottom: 1px solid black;
+    padding: .3em;
+}
+
+.design-table td {
+    background-color: #efefef;
+    padding: .4em;
+    border-radius: 4px;
 }
