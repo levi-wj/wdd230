@@ -1,0 +1,23 @@
+@media screen and (min-width: 70rem) {
+    #header__hambtn {
+        display: none;
+    }
+
+    .header__navbar--mobile {
+        display: none;
+    }
+
+    .header__navbar--desktop {
+        display: inline-block;
+    }
+
+    .header__navbar--desktop li {
+        list-style: none;
+        display: inline-block;
+        color: white;
+        background-color: var(--primary-darker);
+        padding: 1em;
+        margin-top: .5em;
+        margin-right: .5em;
+    }
+}

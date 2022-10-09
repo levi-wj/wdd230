@@ -1,0 +1,10 @@
+@media screen and (min-width: 40rem) {
+    .main__box:nth-child(3) {
+        display: block;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
