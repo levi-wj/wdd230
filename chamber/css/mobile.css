@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 header {
     width: 100%;
     background-color: var(--primary-dark);
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -9,23 +12,38 @@ h1 {
     font-size: medium;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 main {
+    width: 95%;
+    margin: auto;
     display: grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
     grid-template-columns: 100%;
+    grid-template-rows: 10em 10em 10em 10em 20em;
+    margin-top: 1em;
 }
 
 .main__box {
-    width: 95%;
+    width: 100%;
+    height: 100%;
     background-color: #f1f1f1;
-    padding: 1em .5em 8em .5em;
     border: 1px solid gray;
     border-radius: 5px;
-    margin: auto;
-    margin-top: .5em;
-    
 }
 
-.main__box:nth-child(3) {
+.div__thirdspotlight {
+    display: none;
+}
+
+.main__join {
+    display: none;
+}
+
+.main__weather {
     display: none;
 }
 
@@ -48,7 +66,7 @@ main {
 
 .header__social a {
     color: white;
-    background-color: var(--primary);
+    background-color: var(--primary-darker);
     padding: .7em;
     border-radius: 15%;
     border: none;
@@ -79,6 +97,10 @@ main {
     font-size: large;
 }
 
+.header__navbar--mobile a {
+    text-decoration: none;
+}
+
 .header__hambtn {
     background-color: transparent;
     border: none;
@@ -99,8 +121,34 @@ footer {
     width: 100%;
     background-color: var(--primary-darker);
     color: white;
-    padding: 1em 0 2em 0;
+    padding: 2em 0 2em 0;
+    margin-top: 2em;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer hr {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-color: var(--primary);
+}
+
+.footer__logo {
+    max-width: 10em;
+    margin-bottom: 1em;
+}
+
+.footer__text {
+    margin-top: 1em;
+    color: var(--secondary-light);
+}
+
+.footer__text a {
+    color: white;
+}
+
+.footer__container--wide {
+    display: none;
 }
 
 :root {

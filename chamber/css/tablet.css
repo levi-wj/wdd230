@@ -1,10 +1,48 @@
-@media screen and (min-width: 40rem) {
-    .main__box:nth-child(3) {
-        display: block;
-    }
-
+@media screen and (min-width: 45rem) {
     main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 10em);
+    }
+
+    .main__box {
+        grid-column: span 3;
+    }
+
+    .main__spotlight {
+        grid-row: span 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main__spotlight .main__box {
+        grid-column: span 1;
+    }
+
+    .main__event {
+        order: 6;
+        grid-column: span 2;
+    }
+
+    .main__weather {
+        order: 7;
+        display: block !important;
+        grid-column: span 1;
+    }
+
+    .main__join {
+        display: block;
+        order: 5;
+    }
+
+    .footer__container--mobile {
+        display: none;
+    }
+
+    .footer__container--wide {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
     }
 }

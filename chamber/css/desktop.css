@@ -20,4 +20,56 @@
         margin-top: .5em;
         margin-right: .5em;
     }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 10em);
+    }
+
+    .main__event {
+        order: 1;
+        grid-column: span 1;
+    }
+
+    .main__spotlight {
+        grid-row: span 3;
+        grid-column: span 1;
+        order: 3;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .main__spotlight:nth-child(3) {
+        display: block;
+    }
+
+    .main__hero {
+        order: 2;
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .main__weather {
+        order: 4;
+    }
+
+    .main__join {
+        order: 5;
+        grid-column: span 1;
+    }
+
+    .main__news {
+        order: 6;
+    }
+
+    .main__news {
+        grid-column: span 2;
+        order: 6;
+    }
+
+    .footer__container--wide {
+        display: flex;
+        width: 70%;
+    }
 }

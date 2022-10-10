@@ -19,10 +19,10 @@
             <div class="header__topbar">
                 <img src="img/logotext.svg" class="header__img" alt="Chamber of Commerce logo">
                 <ul id="header__navbar--desktop" class="header__navbar--desktop">
-                    <a><li>Discover</li></a>
-                    <a><li>Directory</li></a>
-                    <a><li>Join</li></a>
-                    <a><li>Contact</li></a>
+                    <a href="#"><li>Discover</li></a>
+                    <a href="#"><li>Directory</li></a>
+                    <a href="#"><li>Join</li></a>
+                    <a href="#"><li>Contact</li></a>
                 </ul>
                 <div class="header__social">
                     <a href="www.facebook.com"><span class="fa fa-facebook"></span></a>
@@ -33,25 +33,46 @@
             <div id="header__date">Test date</div>
         </nav>
         <ul id="header__navbar--mobile" class="header__navbar--mobile hidden">
-            <a><li>Discover</li></a>
-            <a><li>Directory</li></a>
-            <a><li>Join</li></a>
-            <a><li>Contact</li></a>
+            <a href="#""><li>Discover</li></a>
+            <a href="#""><li>Directory</li></a>
+            <a href="#""><li>Join</li></a>
+            <a href="#""><li>Contact</li></a>
         </ul>
     </header>
     <main>
-        <div class="main__box">Hero with site name and call to action</div>
-        <div class="main__box">Event</div>
-        <div class="main__box">Weather</div>
-        <div class="main__box">News Release</div>
-        <div class="main__box">
+        <div class="main__box main__hero">Hero with site name and call to action</div>
+        <div class="main__box main__event">Event</div>
+        <div class="main__box main__weather">Weather</div>
+        <div class="main__box main__join">Join</div>
+        <div class="main__box main__news">News Release</div>
+        <div class="main__box main__spotlight">
             <div class="main__box">Spotlight 1</div>
             <div class="main__box">Spotlight 2</div>
-            <div class="main__box">Spotlight 3</div>
+            <div class="main__box div__thirdspotlight">Spotlight 3</div>
         </div>
     </main>
     <footer>
-        <div>&copy;2022 | Levi Jones | WDD230 Project | Last modified: <span id="footer__lastupdated"></span></div>
+        <div class="footer__container--mobile">
+            <img src="img/logowhite.svg" class="footer__logo">
+            <div class="footer__text">Fort Wayne Chamber of Commerce</div>
+            <div class="footer__text">300 E Main St</div>
+            <div class="footer__text">contact@fortwaynechamber.org</div>
+            <div class="footer__text"><a href="https://goo.gl/maps/mfnvtsooJcDAG8j2A"><span class="fa fa-location-dot"></span> Location Map</a></div>
+        </div>
+        <div class="footer__container--wide">
+            <div>
+                <img src="img/logowhite.svg" class="footer__logo">
+                <div class="footer__text">Fort Wayne Chamber of Commerce</div>
+                <div class="footer__text">300 E Main St</div>
+            </div>
+            <div>
+                <div class="footer__text">contact@fortwaynechamber.org</div>
+                <div class="footer__text">+1 260 633 6284</div>
+                <div class="footer__text"><a href="https://goo.gl/maps/mfnvtsooJcDAG8j2A"><span class="fa fa-location-dot"></span> Location Map</a></div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__text">&copy;2022 Fort Wayne Chamber | Levi Jones | WDD230 Project | Last modified: <span id="footer__lastupdated"></span></div>
     </footer>
 </body>
 </html>
