@@ -10,7 +10,7 @@
     }
 
     .main__spotlight {
-        grid-row: span 3;
+        grid-row: span 1;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
