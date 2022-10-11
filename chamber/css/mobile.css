@@ -39,6 +39,12 @@ main {
     display: none;
 }
 
+.main__spotlight .main__box {
+    width: 93%;
+    height: 93%;
+    margin: auto;
+}
+
 .main__join {
     display: none;
 }
