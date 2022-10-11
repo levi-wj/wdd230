@@ -14,11 +14,15 @@
     .header__navbar--desktop li {
         list-style: none;
         display: inline-block;
-        color: white;
         background-color: var(--primary-darker);
         padding: 1em;
         margin-top: .5em;
         margin-right: .5em;
+    }
+
+    .header__navbar--desktop li a {
+        text-decoration: none;
+        color: white;
     }
 
     main {
