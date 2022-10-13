@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-family: Acme, Arial, sans-serif;
+    background-color: rgb(224, 236, 255);
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+main {
+	margin: 0.5rem auto;
+	border: 1px solid rgb(37, 37, 37);
+	padding: 2rem;
+	background-color: rgb(33, 29, 125);
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 95%;
+    color: white;
+    border-radius: 5px;
+}
+
+input, button {
+    padding: 1em;
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+input {
+    width: 60%;
+}
+
+button {
+    width: 25%;
+    float: right;
+}
+
+label {
+	font-size: 0.9rem;
+}
+.listcontainer {
+    margin-top: 2em;
+    border-radius: 3px;
+	border: 1px solid rgb(255, 240, 156);
+	padding: .5rem;
+}
+
+.list {
+	margin: 0.2rem;
+}
+.list li {
+    background-color:rgba(224, 236, 255, 0.11);
+    padding: .5em;
+    border-radius: 2px;
+    font-size: medium;
+}
+
+.list-x-button {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+	margin: 1rem;
+	list-style: none;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 32.5em) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	main {
+		width: 480px;
+	}
+}
