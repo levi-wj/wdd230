@@ -3,6 +3,11 @@ window.addEventListener('load', () => {
 
     setupOnclicks();   
 
+    // Header announcement
+    if (d.getDay() > 0 && d.getDay() < 3) {
+        document.getElementById('header__announcement').classList.remove('hidden');
+    }
+
     // Header date
     document.getElementById('header__date').innerText = 
         `${d.toLocaleDateString('en-us', {weekday: 'long'})}, ${d.getDate()} ${d.toLocaleDateString('en-us', {month: 'long'})} ${d.getFullYear()}`;

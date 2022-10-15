@@ -26,8 +26,6 @@ window.addEventListener('load', () => {
     }
 
     function removeBOMRow() {
-        let li = this.parentElement;
-        li.parentElement.removeChild(li);
-        input.focus();
+        this.parentElement.remove();
     }
 });

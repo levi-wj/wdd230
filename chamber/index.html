@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fort Wayne Chamber of Commerce">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/tablet.css">
@@ -16,6 +17,7 @@
 <body>
     <header>
         <nav>
+            <div id="header__announcement" class="header__announcement hidden">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
             <div class="header__topbar">
                 <img src="img/logotext.svg" class="header__img" alt="Chamber of Commerce logo">
                 <ul id="header__navbar--desktop" class="header__navbar--desktop">
@@ -25,12 +27,12 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <div class="header__social">
-                    <a href="www.facebook.com" aria-label="Facebook link"><span class="fa fa-facebook"></span></a>
-                    <a href="www.linkedin.com" aria-label="Linkedin Link"><span class="fa fa-linkedin"></span></a>
+                    <a href="https://www.facebook.com/" aria-label="Facebook link"><span class="fa fa-facebook"></span></a>
+                    <a href="https://www.linkedin.com/" aria-label="Linkedin Link"><span class="fa fa-linkedin"></span></a>
                 </div>
                 <button id="header__hambtn" class="header__hambtn" aria-label="Hamburger menu"><span class="fa fa-bars"></span></button>
             </div>
-            <div id="header__date">Test date</div>
+            <div id="header__date">Day, Date Month Year</div>
         </nav>
         <ul id="header__navbar--mobile" class="header__navbar--mobile hidden">
             <li><a href="#">Discover</a></li>
@@ -40,15 +42,34 @@
         </ul>
     </header>
     <main>
-        <div class="main__box main__hero">Hero with site name and call to action</div>
+        <div class="main__box main__hero">
+            <h2>Beautiful Fort Wayne</h2>
+            <a href="#">Join the Chamber</a>
+            <img src="img/skyline.jpg">
+        </div>
         <div class="main__box main__event">Event</div>
         <div class="main__box main__weather">Weather</div>
         <div class="main__box main__join">Join</div>
-        <div class="main__box main__news">News Release</div>
+        <div class="main__box main__news">
+            <div class="box__content">
+                <h3>News Release</h3>
+                <p>Parkview CEO Mike Packnett to retire; new leader named</p>
+                <p>Mike Packnett, the man whose name has become almost synonymous with Parkview Health over the past 16 years, on Thursday announced plans to retire as CEO at the end of the year.</p>
+            </div>
+        </div>
         <div class="main__box main__spotlight">
-            <div class="main__box">Spotlight 1</div>
-            <div class="main__box">Spotlight 2</div>
-            <div class="main__box div__thirdspotlight">Spotlight 3</div>
+            <div class="spotlight__card">
+                <img src="img/99gen_arc.png">
+                <div class="spotlight__overlay">ABC Joins the chamber!</div>
+            </div>
+            <div class="spotlight__card">
+                <img src="img/99gen_houses.png">
+                <div class="spotlight__overlay">Gen comp is building new roofs</div>
+            </div>
+            <div class="spotlight__card div__thirdspotlight">
+                <img src="img/99gen_tree.png">
+                <div class="spotlight__overlay">Gen tree giving back to the community</div>
+            </div>
         </div>
     </main>
     <footer>

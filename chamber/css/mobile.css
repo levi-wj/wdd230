@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+body {
+    background-color: #d2e1e7;
+}
+
 header {
     width: 100%;
     background-color: var(--primary-dark);
@@ -31,8 +35,39 @@ main {
     width: 100%;
     height: 100%;
     background-color: #f1f1f1;
-    border: 1px solid gray;
+    border: 1px solid rgb(218, 218, 218);
     border-radius: 5px;
+}
+
+.box__content {
+    margin: .5em;
+}
+
+.spotlight__card {
+    height: 10em;
+    margin: .5em;
+    position: relative;
+    border-radius: 10px;
+}
+
+.spotlight__overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.705);
+    bottom: 0;
+    line-height: 2.5em;
+    width: 100%;
+    color: white;
+    height: 30%;
+    text-align: center;
+    font-size: large;
+    border-radius: 0 0 5px 5px;
+}
+
+.spotlight__card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
 }
 
 .div__thirdspotlight {
@@ -79,12 +114,24 @@ main {
     margin-right: .8em;
 }
 
+.header__social a:hover {
+    background-color: #687a80;
+}
+
 .header__img {
     max-height: 5em;
     margin: .5em;
 }
 
+.header__announcement {
+    width: 100%;
+    background-color: var(--secondary);
+    text-align: center;
+    padding: .2em;
+}
+
 .header__navbar--mobile {
+    z-index: 10;
     position: absolute;
     width: 100%;
     margin: 0;
@@ -102,6 +149,10 @@ main {
     font-size: large;
 }
 
+.header__navbar--mobile li:hover {
+    background-color: var(--primary-darker-hover);
+}
+
 .header__navbar--mobile a {
     text-decoration: none;
     color: #eeeeee;
@@ -117,6 +168,32 @@ main {
 
 .header__navbar--desktop {
     display: none;
+}
+
+.main__hero {
+    position: relative;
+}
+
+.main__hero h2 {
+    position: absolute;
+    margin-left: 1em;
+    color: white;
+}
+
+.main__hero a {
+    position: absolute;
+    color: white;
+    right: 1em;
+    bottom: 1em;
+    font-size: x-large;
+    background-color: #00000063;
+    padding: 1em;
+}
+
+.main__hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hidden {
@@ -162,6 +239,7 @@ footer hr {
     --primary-light: #e2f1f8;
     --primary-dark: #808e95;
     --primary-darker: #616c70;
+    --primary-darker-hover: #687a80;
     --secondary: #add681;
     --secondary-light: #e0ffb1;
     --secondary-dark: #7ca453;
