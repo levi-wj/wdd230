@@ -44,7 +44,7 @@ main {
 }
 
 .box__content a {
-    color: var(--secondary-dark);
+    color: var(--secondary-darker);
 }
 
 .box__content button {
@@ -192,6 +192,8 @@ main {
     position: absolute;
     margin-left: 1em;
     color: white;
+    background-color: #00000052;
+    padding: 1em;
 }
 
 .main__hero a {
@@ -257,4 +259,5 @@ footer hr {
     --secondary: #add681;
     --secondary-light: #e0ffb1;
     --secondary-dark: #7ca453;
+    --secondary-darker: #496b27;
 }
