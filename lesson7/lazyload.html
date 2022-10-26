@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Example</title>
+
+    <style>
+        picture img {
+            filter: blur(0);
+            transition: filter 2s;
+            height: 400px;
+            width: 300px;
+            display: block;
+        }
+
+        picture img[data-src] {
+            filter: blur(.5em);
+        }
+    </style>
+</head>
+<body>
+    <h1>Lazy Loading Example</h1>
+    <picture>
+        <img src="img/placeholder.jpg" data-src="img/apple.jpg" alt="An apple">
+    </picture>
+    <picture>
+        <img src="img/placeholder.jpg" data-src="img/bow.jpg" alt="A red bow">
+    </picture>
+    <picture>
+        <img src="img/placeholder.jpg" data-src="img/flower.jpg" alt="A red flower">
+    </picture>
+    <picture>
+        <img src="img/placeholder.jpg" data-src="img/mug.jpg" alt="A red mug">
+    </picture>
+    <picture>
+        <img src="img/placeholder.jpg" data-src="img/strawbs.jpg" alt="Two strawberries">
+    </picture>
+</body>
+<script>
+    let imgsToLoad = document.querySelectorAll('img[data-src]');
+
+    loadImage = (img) => {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = () => img.removeAttribute('data-src');
+    }
+
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((items, observer) => {
+            items.forEach(item => {
+                if (item.isIntersecting) {
+                    loadImage(item.target);
+                    observer.unobserve(item.target);
+                }
+            });
+        });
+
+        imgsToLoad.forEach(img => observer.observe(img));
+    } else {
+        imgsToLoad.forEach(loadImage);
+    }
+
+</script>
+</html>
