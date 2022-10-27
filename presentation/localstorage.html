@@ -34,12 +34,28 @@
 
         pre {
             color: white;
-            width: 30%;
+            width: fit-content;
             margin: 3em auto;
             text-align: center;
-            border: 1px solid rgb(179, 132, 132);
+            border: 1px solid rgb(72, 72, 149);
+            background-color: rgba(90, 90, 255, 0.129);
             padding: 2em;
             border-radius: 5px;
+        }
+
+        #store-value {
+            border-radius: 4px 0 0 4px;
+        }
+
+        #submit-value {
+            background-color: rgba(90, 255, 142, 0.223);
+            border-radius: 0 4px 4px 0;
+            border-left: none;
+        }
+
+        #read-value {
+            background-color: rgba(90, 90, 255, 0.223);
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -48,7 +64,7 @@
         <h1>LocalStorage Example</h1>
         <input id="store-value" placeholder="Value"/><button id="submit-value">Save value</button> 
         <button id="read-value">Load value</button>
-        <pre id="value-container"></pre>
+        <pre id="value-container">...</pre>
     </main>
 </body>
 </html>
