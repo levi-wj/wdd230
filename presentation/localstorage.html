@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="localstorage.js" defer></script>
+    <title>LocalStorage Example</title>
+
+    <style>
+        body {
+            background-color: rgb(38, 38, 38);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            width: 50%;
+            height: 50%;
+            margin: 5em auto;
+            text-align: center;
+        }
+
+        button, input {
+            padding: 1em;
+            border: 1px solid lightgray;
+            background-color:rgb(38, 38, 38);
+            color: lightgray;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        pre {
+            color: white;
+            width: 30%;
+            margin: 3em auto;
+            text-align: center;
+            border: 1px solid rgb(179, 132, 132);
+            padding: 2em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>LocalStorage Example</h1>
+        <input id="store-value" placeholder="Value"/><button id="submit-value">Save value</button> 
+        <button id="read-value">Load value</button>
+        <pre id="value-container"></pre>
+    </main>
+</body>
+</html>
