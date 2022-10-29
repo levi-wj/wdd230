@@ -1,4 +1,4 @@
-let lastVisited = localStorage.getItem('lastVisited'),
+let lastVisited = localStorage.getItem('lastVisited') ?? new Date(),
     diff = Math.floor((new Date() - new Date(lastVisited)) / 1000 / 60 / 60 / 24),
     lastVisitedEle = document.getElementById('last-visited');
 
