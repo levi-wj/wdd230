@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
+.main__grid {
     width: 95%;
     margin: auto;
     display: grid;
@@ -103,7 +103,6 @@ main {
 }
 
 #header__date {
-    width: 100%;
     color: white;
     text-align: center;
     padding: .5em;
@@ -248,6 +247,55 @@ footer hr {
 
 .footer__container--wide {
     display: none;
+}
+
+/*
+- Discover page -
+*/
+
+.main__discover-grid {
+    width: 70%;
+    min-width: 30em;
+    background-color: var(--primary);
+    margin: 1.5em auto;
+    padding: 1em;
+}
+
+.main__discover-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 22em;
+    gap: 1em;
+    margin-bottom: 1em;
+    background-color: #c0cfd6;
+    padding: .5em;
+    box-shadow: #767676 0px 1px 1px;
+}
+
+.main__discover-entry p {
+    height: fit-content;
+    margin: auto 1em;
+}
+
+.main__discover-entry img {
+    width: 100%;
+    max-height: 20em;
+    border-radius: 5px;
+    box-shadow: #3e3e3e 1px 1px 4px;
+}
+
+.main__discover-entry img:hover {
+    box-shadow: #3e3e3e 3px 3px 4px;
+}
+
+#last-visited {
+    width: 100%;
+    background-color: var(--primary-darker);
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat';
+    padding-top: .2em;
+    padding-bottom: .2em;
 }
 
 :root {
