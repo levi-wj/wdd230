@@ -18,6 +18,10 @@
         margin-right: .5em;
     }
 
+    .header__navbar--desktop li.active a {
+        background-color: var(--primary-darker-hover);
+    }
+
     .header__navbar--desktop li a:hover {
         background-color: var(--primary-darker-hover);
     }
@@ -80,5 +84,24 @@
     .footer__container--wide {
         display: flex;
         width: 70%;
+    }
+
+    /*
+    - Join -
+    */
+    .body__discover-form {
+        width: 80%;
+    }
+
+    .main__forminputs {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    .label__membercontainer {
+        display: inline-block;
+        width: 20%;
+        margin: .5em;
     }
 }

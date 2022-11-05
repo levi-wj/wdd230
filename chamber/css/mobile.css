@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     margin: 0;
     left: -2.5em;
-    top: 6em;
+    top: 8em;
     text-align: center;
 }
 
@@ -160,6 +160,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1.2em;
     border-bottom: 1px solid var(--primary);
     font-size: large;
+}
+
+.header__navbar--mobile li.active {
+    background-color: var(--primary-dark);
 }
 
 .header__navbar--mobile li:hover {
@@ -296,6 +300,86 @@ footer hr {
     font-family: 'Montserrat';
     padding-top: .2em;
     padding-bottom: .2em;
+}
+
+/*
+- Join Page -
+*/
+
+.body__discover-form {
+    width: calc(100% - 6em);
+    margin: 3em auto;
+    background-color: var(--primary-light);
+    padding: 2em;
+    padding-top: 1em;
+    border-radius: 5px;
+}
+
+.main_forminputs label {
+    color: darkgray;
+}
+
+.main__forminputs input, .main__forminputs textarea {
+    padding: .8em;
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 3px;
+}
+
+.main__forminputs input[type="radio"] {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form__memberships {
+    margin-top: 3em;
+}
+
+.label__membercontainer {
+    background-color: white;
+    width: 90%;
+    padding: 1em;
+    margin: 1em;
+    border: 2px solid var(--secondary);
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+}
+
+.label__membercontainer ul li {
+    margin-bottom: .5em;
+}
+
+.main__forminputs input[type="radio"]:checked+label div {
+    background-color: var(--secondary-dark);
+    border-color: var(--secondary);
+    color: white;
+    box-shadow: 0 0 8px 2px var(--secondary-light);
+}
+
+.main__forminputs input[type="submit"] {
+    width: 100%;
+    margin: 3em auto 1em auto;
+    max-width: 30em;
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+
+.main__forminputs input[type="submit"]:hover {
+    box-shadow: 2px 2px 3px rgb(131, 131, 131);
+}
+
+.body__thankscontainer {
+    width: 60%;
+    min-width: 24em;
+    background-color: var(--primary-light);
+    margin: 1em auto;
+    color: black;
+    padding: 2em;
 }
 
 :root {

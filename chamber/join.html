@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fort Wayne Chamber of Commerce">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <script src="https://kit.fontawesome.com/7812c968c2.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/windchill.js" defer></script>
+    <script src="js/join.js" defer></script>
+    <title>Join the Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="header__announcement" class="header__announcement hidden">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+            <div class="header__topbar">
+                <a href="index.html"><img src="img/logotext.svg" class="header__img" alt="Chamber of Commerce logo"></a>
+                <ul id="header__navbar--desktop" class="header__navbar--desktop">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="header__social">
+                    <a href="https://www.facebook.com/" aria-label="Facebook link"><span class="fa fa-facebook"></span></a>
+                    <a href="https://www.linkedin.com/" aria-label="Linkedin Link"><span class="fa fa-linkedin"></span></a>
+                </div>
+                <button id="header__hambtn" class="header__hambtn" aria-label="Hamburger menu"><span class="fa fa-bars"></span></button>
+            </div>
+            <div id="header__date">Day, Date Month Year</div>
+        </nav>
+        <ul id="header__navbar--mobile" class="header__navbar--mobile hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <main class="body__discover-form">
+        <form method="GET" class="main__forminputs" action="thankyou.html">
+            <h3>Personal Information</h3>
+            <label for="main__first-name">First Name *</label>
+            <input type="text" id="main__first-name" name="first_name" placeholder="First name" required>
+            <label for="main__last-name">Last Name *</label>
+            <input type="text" id="main__last-name" name="last_name" placeholder="Last name" required>
+            <label for="main__title">Title</label>
+            <input type="text" id="main__title" name="title" placeholder="Title" pattern="[a-zA-Z- ]{7,}">
+            <label for="main__email">Email *</label>
+            <input type="email" id="main__email" name="email" placeholder="Email" required>
+            <label for="main__phone">Cell Phone *</label>
+            <input type="tel" id="main__phone" name="cellphone" placeholder="Phone Number" required>
+            <label for="main__bizname">Business Name *</label>
+            <input type="text" id="main__bizname" name="business_name" placeholder="Business Name" required>
+            <label for="main__bizdesc">Business Description</label>
+            <textarea cols="50" rows="5" id="main__bizdesc" name="business_description" placeholder="Business Description"></textarea>
+            
+            <div class="form__memberships">
+                <h3>Membership Level</h3>
+                <input type="radio" id="main__memnp" name="membership_level" value="np" required>
+                <label for="main__memnp">
+                    <div class="label__membercontainer">
+                        <h4>Non-profit Membership</h4>
+                        <ul>
+                            <li>For non profit organizations there is no fee</li>
+                        </ul>
+                    </div>
+                </label>
+                <input type="radio" id="main__membronze" name="membership_level" value="bronze" required>
+                <label for="main__membronze">
+                    <div class="label__membercontainer">
+                        <h4>Bronze Membership</h4>
+                        <ul>
+                            <li>15% discount on events</li>
+                            <li>10% discount on advertising</li>
+                            <li>Fee of $50/month</li>
+                        </ul>
+                    </div>
+                </label>
+                <input type="radio" id="main__memsilver" name="membership_level" value="silver" required>
+                <label for="main__memsilver">
+                    <div class="label__membercontainer">
+                        <h4>Silver Membership</h4>
+                        <ul>
+                            <li>25% discount on events</li>
+                            <li>15% discount on advertising</li>
+                            <li>Free participation in trade fair</li>
+                            <li>Fee of $100/month</li>
+                        </ul>
+                    </div>
+                </label>
+                <input type="radio" id="main__memgold" name="membership_level" value="gold" required>
+                <label for="main__memgold">
+                    <div class="label__membercontainer">
+                        <h4>Gold Membership</h4>
+                        <ul>
+                            <li>50% discount on events</li>
+                            <li>50% discount on advertising</li>
+                            <li>Free participation in trade fair</li>
+                            <li>5 free featured ads per year</li>
+                            <li>1 free training per quarter</li>
+                            <li>Fee of $250/month</li>
+                        </ul>
+                    </div>
+                </label>
+            </div>
+
+            <input type="hidden" id="main__hidden-datetime" name="datetime">
+
+            <input type="submit" value="Enroll Your Business">
+        </form>
+    </main>
+    <footer>
+        <div class="footer__container--mobile">
+            <img src="img/logowhite.svg" class="footer__logo" alt="Chamber logo">
+            <div class="footer__text">Fort Wayne Chamber of Commerce</div>
+            <div class="footer__text">300 E Main St</div>
+            <div class="footer__text">contact@fortwaynechamber.org</div>
+            <div class="footer__text"><a href="https://goo.gl/maps/mfnvtsooJcDAG8j2A"><span class="fa fa-location-dot"></span> Location Map</a></div>
+        </div>
+        <div class="footer__container--wide">
+            <div>
+                <img src="img/logowhite.svg" class="footer__logo" alt="Chamber logo">
+                <div class="footer__text">Fort Wayne Chamber of Commerce</div>
+                <div class="footer__text">300 E Main St</div>
+            </div>
+            <div>
+                <div class="footer__text">contact@fortwaynechamber.org</div>
+                <div class="footer__text">+1 260 633 6284</div>
+                <div class="footer__text"><a href="https://goo.gl/maps/mfnvtsooJcDAG8j2A"><span class="fa fa-location-dot"></span> Location Map</a></div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__text">&copy;2022 Fort Wayne Chamber | Levi Jones | WDD230 Project | Last modified: <span id="footer__lastupdated"></span></div>
+    </footer>
+</body>
+</html>
