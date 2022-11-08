@@ -101,7 +101,21 @@
 
     .label__membercontainer {
         display: inline-block;
-        width: 20%;
+        width: 19%;
         margin: .5em;
+    }
+
+    .form__input-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form__input-grid label {
+        width: 90%;
+        color: rgb(69, 69, 69);
+    }
+
+    .form__input-grid label textarea {
+        width: 210%;
     }
 }

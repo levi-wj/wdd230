@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__announcement {
-    width: 100%;
+    width: calc(100% - .4em);
     background-color: var(--secondary);
     text-align: center;
     padding: .2em;
@@ -332,7 +332,6 @@ footer hr {
 .main__forminputs input[type="radio"] {
     position: fixed;
     opacity: 0;
-    pointer-events: none;
 }
 
 .form__memberships {
@@ -344,7 +343,8 @@ footer hr {
     width: 90%;
     padding: 1em;
     margin: 1em;
-    border: 2px solid var(--secondary);
+    border: none;
+    border-bottom: 2px solid var(--secondary);
     cursor: pointer;
     border-radius: 4px;
     display: block;
@@ -354,23 +354,24 @@ footer hr {
     margin-bottom: .5em;
 }
 
-.main__forminputs input[type="radio"]:checked+label div {
-    background-color: var(--secondary-dark);
-    border-color: var(--secondary);
+.main__forminputs input[type="radio"]:checked+label span {
+    background-color: var(--primary-darker);
+    border-color: white;
     color: white;
-    box-shadow: 0 0 8px 2px var(--secondary-light);
+    box-shadow: 0 0 8px 2px white;
 }
 
 .main__forminputs input[type="submit"] {
     width: 100%;
     margin: 3em auto 1em auto;
     max-width: 30em;
-    background-color: var(--secondary);
+    background-color: var(--secondary-light);
     cursor: pointer;
 }
 
 .main__forminputs input[type="submit"]:hover {
     box-shadow: 2px 2px 3px rgb(131, 131, 131);
+    background-color: var(--secondary-lighter);
 }
 
 .body__thankscontainer {
@@ -388,8 +389,9 @@ footer hr {
     --primary-dark: #808e95;
     --primary-darker: #616c70;
     --primary-darker-hover: #687a80;
-    --secondary: #add681;
+    --secondary-lighter: #e3fcbf;
     --secondary-light: #e0ffb1;
+    --secondary: #add681;
     --secondary-dark: #7ca453;
     --secondary-darker: #496b27;
 }

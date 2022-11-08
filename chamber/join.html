@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/desktop.css">
     <script src="https://kit.fontawesome.com/7812c968c2.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-    <script src="js/windchill.js" defer></script>
     <script src="js/join.js" defer></script>
     <title>Join the Chamber of Commerce</title>
 </head>
@@ -48,46 +47,55 @@
     <main class="body__discover-form">
         <form method="GET" class="main__forminputs" action="thankyou.html">
             <h3>Personal Information</h3>
-            <label for="main__first-name">First Name *</label>
-            <input type="text" id="main__first-name" name="first_name" placeholder="First name" required>
-            <label for="main__last-name">Last Name *</label>
-            <input type="text" id="main__last-name" name="last_name" placeholder="Last name" required>
-            <label for="main__title">Title</label>
-            <input type="text" id="main__title" name="title" placeholder="Title" pattern="[a-zA-Z- ]{7,}">
-            <label for="main__email">Email *</label>
-            <input type="email" id="main__email" name="email" placeholder="Email" required>
-            <label for="main__phone">Cell Phone *</label>
-            <input type="tel" id="main__phone" name="cellphone" placeholder="Phone Number" required>
-            <label for="main__bizname">Business Name *</label>
-            <input type="text" id="main__bizname" name="business_name" placeholder="Business Name" required>
-            <label for="main__bizdesc">Business Description</label>
-            <textarea cols="50" rows="5" id="main__bizdesc" name="business_description" placeholder="Business Description"></textarea>
+            <div class="form__input-grid">
+                <label for="main__first-name">First Name *
+                    <input type="text" id="main__first-name" name="first_name" placeholder="First name" required>
+                </label>
+                <label for="main__last-name">Last Name *
+                    <input type="text" id="main__last-name" name="last_name" placeholder="Last name" required>
+                </label>
+                <label for="main__title">Title
+                    <input type="text" id="main__title" name="title" placeholder="Title" pattern="[a-zA-Z- ]{7,}">
+                </label>
+                <label for="main__email">Email *
+                    <input type="email" id="main__email" name="email" placeholder="Email" required>
+                </label>
+                <label for="main__phone">Cell Phone *
+                    <input type="tel" id="main__phone" name="cellphone" placeholder="Phone Number" required>
+                </label>
+                <label for="main__bizname">Business Name *
+                    <input type="text" id="main__bizname" name="business_name" placeholder="Business Name" required>
+                </label>
+                <label for="main__bizdesc">Business Description
+                    <textarea cols="50" rows="5" id="main__bizdesc" name="business_description" placeholder="Business Description"></textarea>
+                </label>
+            </div>
             
             <div class="form__memberships">
                 <h3>Membership Level</h3>
                 <input type="radio" id="main__memnp" name="membership_level" value="np" required>
                 <label for="main__memnp">
-                    <div class="label__membercontainer">
+                    <span class="label__membercontainer">
                         <h4>Non-profit Membership</h4>
                         <ul>
                             <li>For non profit organizations there is no fee</li>
                         </ul>
-                    </div>
+                    </span>
                 </label>
                 <input type="radio" id="main__membronze" name="membership_level" value="bronze" required>
                 <label for="main__membronze">
-                    <div class="label__membercontainer">
+                    <span class="label__membercontainer">
                         <h4>Bronze Membership</h4>
                         <ul>
                             <li>15% discount on events</li>
                             <li>10% discount on advertising</li>
                             <li>Fee of $50/month</li>
                         </ul>
-                    </div>
+                    </span>
                 </label>
                 <input type="radio" id="main__memsilver" name="membership_level" value="silver" required>
                 <label for="main__memsilver">
-                    <div class="label__membercontainer">
+                    <span class="label__membercontainer">
                         <h4>Silver Membership</h4>
                         <ul>
                             <li>25% discount on events</li>
@@ -95,11 +103,11 @@
                             <li>Free participation in trade fair</li>
                             <li>Fee of $100/month</li>
                         </ul>
-                    </div>
+                    </span>
                 </label>
                 <input type="radio" id="main__memgold" name="membership_level" value="gold" required>
                 <label for="main__memgold">
-                    <div class="label__membercontainer">
+                    <span class="label__membercontainer">
                         <h4>Gold Membership</h4>
                         <ul>
                             <li>50% discount on events</li>
@@ -109,7 +117,7 @@
                             <li>1 free training per quarter</li>
                             <li>Fee of $250/month</li>
                         </ul>
-                    </div>
+                    </span>
                 </label>
             </div>
 
