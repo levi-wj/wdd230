@@ -112,7 +112,7 @@
 
     .form__input-grid label {
         width: 90%;
-        color: rgb(69, 69, 69);
+        color: #454545;
     }
 
     .form__input-grid label textarea {

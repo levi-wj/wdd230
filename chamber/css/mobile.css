@@ -346,8 +346,12 @@ footer hr {
     border: none;
     border-bottom: 2px solid var(--secondary);
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
     display: block;
+}
+
+.label__membercontainer:hover {
+    background-color: #f1ffdd;
 }
 
 .label__membercontainer ul li {
@@ -355,10 +359,8 @@ footer hr {
 }
 
 .main__forminputs input[type="radio"]:checked+label span {
-    background-color: var(--primary-darker);
-    border-color: white;
-    color: white;
-    box-shadow: 0 0 8px 2px white;
+    background-color: var(--secondary-light);
+    border: 2px solid white;
 }
 
 .main__forminputs input[type="submit"] {
