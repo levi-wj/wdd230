@@ -1,4 +1,4 @@
-const requestURL = document.location.origin + '/lesson9/data/prophets.json';
+const requestURL = document.location.origin + 'wdd230/lesson9/data/prophets.json';
 
 fetch(requestURL)
     .then(response => response.json())
