@@ -1,9 +1,9 @@
-const requestURL = document.location.origin + 'wdd230/lesson9/data/prophets.json';
+const requestURL = document.location.origin + '/wdd230/lesson9/data/prophets.json';
 
 fetch(requestURL)
+    .catch(err => alert)
     .then(response => response.json())
     .then(jsonObject => {
-        console.log(jsonObject)
         jsonObject.prophets.forEach(displayProphets);
     });
 
