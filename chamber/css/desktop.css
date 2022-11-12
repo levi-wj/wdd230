@@ -118,4 +118,19 @@
     .form__input-grid label textarea {
         width: 210%;
     }
+
+    /*
+    - Discover -
+    */
+    #main__card-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    #main__list-section {
+        width: calc(80% - 2em);
+        margin: 1em auto;
+    }
 }

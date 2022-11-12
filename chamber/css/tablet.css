@@ -45,4 +45,11 @@
         margin: auto;
         justify-content: space-between;
     }
+
+    /*
+    - Directory -
+    */
+    #main__card-section {
+        grid-template-columns: 1fr 1fr;
+    }
 }

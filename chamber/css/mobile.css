@@ -385,6 +385,92 @@ footer hr {
     padding: 2em;
 }
 
+/*
+- Directory Page -
+*/
+.main__discover-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-dark);
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 4em;
+}
+
+.main__discover-header h3 {
+    display: inline-block;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main__discover-header button {
+    color: white;
+    background-color: var(--primary-darker);
+    padding: .7em;
+    border-radius: 15%;
+    border: none;
+    margin-left: .2em;
+    cursor: pointer;
+}
+
+.main__discover-header button:hover {
+    background-color: #687a80;
+}
+
+.main__discover-header button.active {
+    background-color: #687a80;
+    border: 1px solid white;
+}
+
+#main__card-section {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1em;
+    margin: 1em;
+}
+
+#main__card-section section {
+    background-color: white;
+    padding: 1em;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px gray;
+    text-align: center;
+}
+
+#main__card-section section a {
+    color: var(--secondary-darker);
+}
+
+#main__list-section {
+    width: calc(100% - 2em);
+    margin: 1em;
+    border-collapse: collapse;
+}
+
+#main__list-section tr td a {
+    color: var(--secondary-darker);
+}
+
+#main__list-section th {
+    background-color: var(--primary);
+    padding: .5em;
+}
+
+#main__list-section tr {
+    border-bottom: 1px solid gray;
+    background-color: white;
+}
+
+#main__list-section tr:nth-child(even) {
+    background-color: #f7fcff;
+}
+
+#main__list-section td {
+    /* background-color: white; */
+    padding: .75em;
+}
+
 :root {
     --primary: #b0bec5;
     --primary-light: #e2f1f8;
