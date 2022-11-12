@@ -5,8 +5,7 @@ var directory = (function () {
         cardButton = null,
         listButton = null;
     const companyData = (async () => {
-        // TODO: wdd230/
-        return await fetch(document.location.origin + '/chamber/data/data.json')
+        return await fetch(document.location.origin + '/wdd230/chamber/data/data.json')
             .catch(alert)
             .then(response => response.json());
         })();
