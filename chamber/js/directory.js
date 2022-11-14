@@ -36,6 +36,7 @@ var directory = (function () {
             site = document.createElement('a');
 
         img.setAttribute('src', data.img);
+        img.height = 160;
         name.textContent = data.name;
         address.innerText = data.address;
         phone.innerText = data.phone;
