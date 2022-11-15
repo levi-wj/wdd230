@@ -9,6 +9,17 @@
         grid-column: span 3;
     }
 
+    .main__hero h2 {
+        margin-left: 1em;
+        padding: 1em;
+    }
+
+    .main__hero a {
+        right: 1em;
+        bottom: 1em;
+        padding: 1em;
+    }
+
     .main__spotlight {
         grid-row: span 1;
         display: grid;

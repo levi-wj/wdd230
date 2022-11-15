@@ -136,6 +136,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: .5em;
 }
 
+@media screen and (max-width: 25rem) {
+    .header__img {
+        max-height: 4em;
+    }
+}
+
 .header__announcement {
     width: calc(100% - .4em);
     background-color: var(--secondary);
@@ -193,20 +199,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .main__hero h2 {
     position: absolute;
-    margin-left: 1em;
     color: white;
     background-color: #00000052;
-    padding: 1em;
+    margin-left: .5em;
+    padding: .5em;
 }
 
 .main__hero a {
     position: absolute;
     color: white;
-    right: 1em;
-    bottom: 1em;
+    right: .5em;
+    bottom: .8em;
     font-size: x-large;
     background-color: #00000063;
-    padding: 1em;
+    padding: .5em;
 }
 
 .main__hero img {
@@ -420,7 +426,7 @@ footer hr {
 
 .main__discover-header button.active {
     background-color: #687a80;
-    border: 1px solid white;
+    border: 1px solid #b1c2ce;
 }
 
 #main__card-section {
