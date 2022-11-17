@@ -1,3 +1,8 @@
+<!-- 
+    TODO:
+    There's an odd breakpoint between 1120px and 1140px wide where the "Gold" level ends up on another row.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,25 +54,25 @@
             <h3>Personal Information</h3>
             <div class="form__input-grid">
                 <label for="main__first-name">First Name *
-                    <input type="text" id="main__first-name" name="first_name" placeholder="First name" required>
+                    <input type="text" id="main__first-name" name="first_name" placeholder="Joe" required>
                 </label>
                 <label for="main__last-name">Last Name *
-                    <input type="text" id="main__last-name" name="last_name" placeholder="Last name" required>
+                    <input type="text" id="main__last-name" name="last_name" placeholder="Smith" required>
                 </label>
                 <label for="main__title">Title
-                    <input type="text" id="main__title" name="title" placeholder="Title" pattern="[a-zA-Z- ]{7,}">
+                    <input type="text" id="main__title" name="title" placeholder="Mr." pattern="[a-zA-Z- ]{7,}">
                 </label>
                 <label for="main__email">Email *
-                    <input type="email" id="main__email" name="email" placeholder="Email" required>
+                    <input type="email" id="main__email" name="email" placeholder="example@company.com" required>
                 </label>
                 <label for="main__phone">Cell Phone *
-                    <input type="tel" id="main__phone" name="cellphone" placeholder="Phone Number" required>
+                    <input type="tel" id="main__phone" name="cellphone" placeholder="(123) 123-1234" required>
                 </label>
                 <label for="main__bizname">Business Name *
-                    <input type="text" id="main__bizname" name="business_name" placeholder="Business Name" required>
+                    <input type="text" id="main__bizname" name="business_name" required>
                 </label>
                 <label for="main__bizdesc">Business Description
-                    <textarea cols="50" rows="5" id="main__bizdesc" name="business_description" placeholder="Business Description"></textarea>
+                    <textarea cols="50" rows="5" id="main__bizdesc" name="business_description"></textarea>
                 </label>
             </div>
             
@@ -75,27 +80,27 @@
                 <h3>Membership Level</h3>
                 <input type="radio" id="main__memnp" name="membership_level" value="np" required>
                 <label for="main__memnp">
-                    <span class="label__membercontainer">
+                    <div class="label__membercontainer">
                         <h4>Non-profit Membership</h4>
                         <ul>
                             <li>For non profit organizations there is no fee</li>
                         </ul>
-                    </span>
+                    </div>
                 </label>
                 <input type="radio" id="main__membronze" name="membership_level" value="bronze" required>
                 <label for="main__membronze">
-                    <span class="label__membercontainer">
+                    <div class="label__membercontainer">
                         <h4>Bronze Membership</h4>
                         <ul>
                             <li>15% discount on events</li>
                             <li>10% discount on advertising</li>
                             <li>Fee of $50/month</li>
                         </ul>
-                    </span>
+                    </div>
                 </label>
                 <input type="radio" id="main__memsilver" name="membership_level" value="silver" required>
                 <label for="main__memsilver">
-                    <span class="label__membercontainer">
+                    <div class="label__membercontainer">
                         <h4>Silver Membership</h4>
                         <ul>
                             <li>25% discount on events</li>
@@ -103,11 +108,11 @@
                             <li>Free participation in trade fair</li>
                             <li>Fee of $100/month</li>
                         </ul>
-                    </span>
+                    </div>
                 </label>
                 <input type="radio" id="main__memgold" name="membership_level" value="gold" required>
                 <label for="main__memgold">
-                    <span class="label__membercontainer">
+                    <div class="label__membercontainer">
                         <h4>Gold Membership</h4>
                         <ul>
                             <li>50% discount on events</li>
@@ -117,7 +122,7 @@
                             <li>1 free training per quarter</li>
                             <li>Fee of $250/month</li>
                         </ul>
-                    </span>
+                    </div>
                 </label>
             </div>
 

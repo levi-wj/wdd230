@@ -364,7 +364,7 @@ footer hr {
     margin-bottom: .5em;
 }
 
-.main__forminputs input[type="radio"]:checked+label span {
+.main__forminputs input[type="radio"]:checked+label div {
     background-color: var(--secondary-light);
     border: 2px solid white;
 }
@@ -461,6 +461,7 @@ footer hr {
 #main__list-section th {
     background-color: var(--primary);
     padding: .5em;
+    display: none;
 }
 
 #main__list-section tr {
@@ -472,8 +473,8 @@ footer hr {
     background-color: #f7fcff;
 }
 
-#main__list-section td {
-    /* background-color: white; */
+#main__list-section tr td {
+    display: block;
     padding: .75em;
 }
 

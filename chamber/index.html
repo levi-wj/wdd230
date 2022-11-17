@@ -1,3 +1,8 @@
+<!--
+    TODO:
+    Do take a look at the suggestions in the lighthouse report, especially around image size and cumulative layout shift.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,10 +68,12 @@
         </div>
         <div class="main__box main__weather">
             <div class="box__content">
-                <h4><span id="content__temp">00</span> <i class="fa fa-sun"></i></h4>
+                <p id="content__temp">00</p>
+                <p id="content__weather-type"></p>
+                <img id="content__weather-icon">
                 <hr>
-                <p>Windspeed: <span id="wind-speed">00</span></p>
-                <p>Windchill: <span id="wind-chill">00</span></p>
+                <p>Windspeed: <span id="content__wind-speed">00</span></p>
+                <p>Windchill: <span id="content__wind-chill">00</span></p>
             </div>
         </div>
         <div class="main__box main__join">
