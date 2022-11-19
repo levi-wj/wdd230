@@ -86,4 +86,16 @@
     #main__list-section tr td {
         display: table-cell;
     }
+
+    /*
+    - Contact -
+    */
+
+    .contact__inline-inputs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main__board-directors {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

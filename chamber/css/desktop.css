@@ -89,7 +89,7 @@
     /*
     - Join -
     */
-    .body__discover-form {
+    .body__join-form {
         width: 80%;
     }
 
@@ -132,5 +132,17 @@
     #main__list-section {
         width: calc(80% - 2em);
         margin: 1em auto;
+    }
+
+    /*
+    - Contact -
+    */
+
+    .main__contact {
+        width: 70%;
+    }
+
+    .main__board-directors {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

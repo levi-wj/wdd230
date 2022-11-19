@@ -313,7 +313,7 @@ footer hr {
 - Join Page -
 */
 
-.body__discover-form {
+.body__join-form {
     width: calc(100% - 6em);
     margin: 3em auto;
     background-color: var(--primary-light);
@@ -330,7 +330,7 @@ footer hr {
     padding: .8em;
     display: block;
     margin-bottom: 1em;
-    width: 100%;
+    width: calc(100% - 1.6em);
     border: none;
     border-bottom: 1px solid gray;
     border-radius: 3px;
@@ -365,7 +365,7 @@ footer hr {
     margin-bottom: .5em;
 }
 
-.main__forminputs input[type="radio"]:checked+label div {
+.main__forminputs input[type="radio"]:checked + label div {
     background-color: var(--secondary-light);
     border: 2px solid white;
 }
@@ -395,7 +395,8 @@ footer hr {
 /*
 - Directory Page -
 */
-.main__discover-header {
+
+.main__directory-header {
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-dark);
@@ -405,13 +406,13 @@ footer hr {
     line-height: 4em;
 }
 
-.main__discover-header h3 {
+.main__directory-header h3 {
     display: inline-block;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-.main__discover-header button {
+.main__directory-header button {
     color: white;
     background-color: var(--primary-darker);
     padding: .7em;
@@ -421,11 +422,11 @@ footer hr {
     cursor: pointer;
 }
 
-.main__discover-header button:hover {
+.main__directory-header button:hover {
     background-color: #687a80;
 }
 
-.main__discover-header button.active {
+.main__directory-header button.active {
     background-color: #687a80;
     border: 1px solid #b1c2ce;
 }
@@ -443,6 +444,10 @@ footer hr {
     border-radius: 4px;
     box-shadow: 0px 2px 5px gray;
     text-align: center;
+}
+
+#main__card-section section h4, #main__card-section section p, #main__card-section section a {
+    font-family: 'Montserrat', sans-serif;
 }
 
 #main__card-section section a {
@@ -477,6 +482,67 @@ footer hr {
 #main__list-section tr td {
     display: block;
     padding: .75em;
+}
+
+/*
+- Contact -
+*/
+
+.main__contact {
+    width: calc(100% - 6em);
+    margin: 3em auto;
+    margin-bottom: 2em;
+    background-color: var(--primary-light);
+    padding: 2em;
+    padding-top: 1em;
+    border-radius: 5px;
+}
+
+.main__contact h3 {
+    margin-bottom: -.4em;
+}
+
+.main__contact p {
+    margin-bottom: 2.8em;
+}
+
+.contact__inline-inputs {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: .8em;
+}
+
+.main__board-directors {
+    display: grid;
+    gap: .2em;
+    grid-template-columns: 100%;
+    padding: .5em;
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+}
+
+.main__board-directors section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #cbdbe4;
+    border-radius: 4px;
+    padding: 1em;
+}
+
+.main__board-directors section img {
+    width: 7em;
+    height: 7em;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+}
+
+.main__board-directors section span {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto .5em;
+    font-size: large;
+    font-weight: 200;
+    text-align: right;
 }
 
 :root {

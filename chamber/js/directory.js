@@ -5,7 +5,7 @@ var directory = (function () {
         cardButton = null,
         listButton = null;
     const companyData = (async () => {
-        return await fetch(document.location.origin + '/wdd230/chamber/data/data.json')
+        return await fetch(document.location.origin + '/chamber/data/data.json')
             .catch(alert)
             .then(response => response.json());
         })();
@@ -13,8 +13,8 @@ var directory = (function () {
     window.addEventListener('load', async () => {
         cardContainer = document.getElementById('main__card-section');
         listContainer = document.getElementById('main__list-section');
-        cardButton = document.getElementById('discover__cardbutton');
-        listButton = document.getElementById('discover__listbutton');
+        cardButton = document.getElementById('directory__cardbutton');
+        listButton = document.getElementById('directory__listbutton');
 
         companyData.then(companyJSON => {
             companyJSON.forEach(company => {
