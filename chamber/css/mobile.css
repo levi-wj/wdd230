@@ -301,12 +301,12 @@ footer hr {
 
 #last-visited {
     width: 100%;
-    background-color: var(--primary-darker);
+    background-color: var(--primary-dark);
     text-align: center;
     color: white;
     font-family: 'Montserrat';
-    padding-top: .2em;
-    padding-bottom: .2em;
+    padding-top: .4em;
+    padding-bottom: .4em;
 }
 
 /*

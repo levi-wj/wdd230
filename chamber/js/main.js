@@ -1,10 +1,9 @@
+let d = new Date(),
+    showHeader = (d.getDay() > 0 && d.getDay() < 3);
+
 window.addEventListener('load', () => {
-    let d = new Date();
-
-    setupOnclicks();   
-
     // Header announcement
-    if (d.getDay() > 0 && d.getDay() < 3) {
+    if (showHeader) {
         document.getElementById('header__announcement').classList.remove('hidden');
     }
 
@@ -14,6 +13,8 @@ window.addEventListener('load', () => {
 
     // Footer date
     document.getElementById('footer__lastupdated').innerText = document.lastModified;
+
+    setupOnclicks();   
 });
 
 function setupOnclicks() {
