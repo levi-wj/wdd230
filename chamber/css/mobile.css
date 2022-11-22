@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .spotlight__card {
-    height: 10em;
+    height: 9.75em;
     margin: .5em;
     position: relative;
     border-radius: 10px;
@@ -220,6 +220,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 4px;
 }
 
 .hidden {

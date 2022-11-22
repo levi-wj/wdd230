@@ -1,12 +1,12 @@
 (async () => {
     const APIKEY = '90427170ad700f5d9f60d25078b99c82',
-        LAT = '64.8378',
-        LON = '-147.7164',
-        APIURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&q=Fairbanks&units=units=imperial&appid=${APIKEY}`,
+        LAT = '41.0793',
+        LON = '-85.1394',
+        APIURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&units=units=imperial&appid=${APIKEY}`,
         response = await fetch(APIURL);
 
     weather = await response.json();
-    // console.log(weather)
+    console.log(weather)
     showWeather(weather);
 })();
 
