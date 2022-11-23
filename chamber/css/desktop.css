@@ -99,6 +99,10 @@
         padding: 1em;
     }
 
+    .main__forminputs input, .main__forminputs textarea {
+        width: 100%;
+    }
+
     .label__membercontainer {
         display: inline-block;
         width: 18%;
@@ -107,7 +111,7 @@
 
     .form__input-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .form__input-grid label {
@@ -116,7 +120,7 @@
     }
 
     .form__input-grid label textarea {
-        width: 210%;
+        width: 100%;
     }
 
     /*
