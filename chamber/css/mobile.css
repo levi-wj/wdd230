@@ -47,11 +47,16 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-darker);
 }
 
-.box__content button {
+.main__join .box__content a {
+    display: block;
+    width: calc(100% - 1.5em - .8em);
+    margin: .4em;
+    text-align: center;
+    color: black;
     background-color: #baee87;
-    border-radius: 2px;
+    text-decoration: none;
     padding: .75em;
-    width: 100%;
+    border-radius: 2px;
     border: none;
     border-bottom: 3px solid var(--secondary);
     cursor: pointer;
