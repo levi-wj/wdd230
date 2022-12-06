@@ -29,7 +29,7 @@ var create = (function () {
     }
     
     const getToken = async () => {
-        fetch(`https://accounts.spotify.com/api/token&code=${authCode}&redirect_uri=${REDIRECT}&grant_type=authorization_code`, { mode: 'no-cors'})
+        fetch(`https://accounts.spotify.com/api/token?code=${authCode}&redirect_uri=${REDIRECT}&grant_type=authorization_code`, { mode: 'no-cors'})
             .then(res => {
                 console.log(res)
             });
