@@ -1,0 +1,58 @@
+@media screen and (min-width: 42rem) {
+
+/*
+- Navbar -
+*/ 
+.navbar-desktop {
+    display: flex;
+}
+
+.navbar-desktop {
+    justify-content: space-between;
+    margin: auto 0;
+    list-style: none;
+}
+
+.navbar-desktop li {
+    margin: .8em;
+}
+
+.navbar-desktop li a {
+    color: var(--text);
+    height: 100%;
+    padding: 1.2em;
+    border-radius: 4px;
+}
+
+.navbar-desktop li a:hover {
+    background-color: var(--background-1)
+}
+
+.navbar-ham-btn {
+    display: none;
+}
+
+/*
+- Index -
+*/
+
+.index_popular-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.index_pop-sticker-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.index_tesimonials-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.index_testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
