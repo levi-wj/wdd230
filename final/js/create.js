@@ -9,7 +9,7 @@ var create = (function () {
         authCode = '',
         authToken = '';
 
-    window.addEventListener('load', () => {
+    window.addEventListener('load', async () => {
         const CURURL = new URL(window.location);
 
         linkBtn = document.getElementById('link-spotify');
@@ -20,11 +20,15 @@ var create = (function () {
 
         if (authCode) {
             linkTxt.innerText = 'Account Connected';
+            getToken();
         }
     });
 
-    const linkSpotify = async () => {
+    const linkSpotify = () => {
         window.location = `https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&response_type=code&scope=${SCOPES}&redirect_uri=${REDIRECT}`;
+    }
+    
+    const getToken = async () => {
         fetch(`https://accounts.spotify.com/api/token&code=${authCode}&redirect_uri=${REDIRECT}&grant_type=authorization_code`)
             .then(res => {
                 console.log(res)
