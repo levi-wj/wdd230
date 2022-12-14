@@ -324,12 +324,6 @@ footer hr {
     width: 80%;
 }
 
-.create_canvas button {
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-}
-
 #buy-button {
     position: absolute;
     right: 1em;
@@ -339,6 +333,7 @@ footer hr {
 /*
 - Browse -
 */
+
 .browse_main {
     display: grid;
     background-color: var(--background-1);
@@ -370,7 +365,9 @@ footer hr {
     object-fit: contain;
 }
 
-.browse_item p {
+.browse_item-desc {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -381,6 +378,71 @@ footer hr {
     padding: 1em;
     margin: 0;
 }
+
+.browse_item-desc p {
+    margin: 0;
+    line-height: 2em;
+}
+
+.browse_item-desc i {
+    padding: .5em;
+    border-radius: 100%;
+}
+
+.browse_item-desc i:hover {
+    background-color:#5d5d5d50;
+}
+
+/*
+- Contact -
+*/
+
+.contact_main {
+    margin: 0 auto;
+    background-color: var(--background-2);
+    padding: 2em;
+    border-radius: 4px;
+}
+
+.contact_form {
+    width: calc(100% - 2em);
+    border-radius: 8px;
+    background-color: var(--background-3);
+    border: 2px solid var(--background-4);
+    margin: 3em auto;
+    padding: 1em;
+    margin-bottom: 5em;
+}
+
+.contact_form label {
+    display: flex;
+    justify-content: space-between;
+    margin: .5em;
+    line-height: 1.5em;
+}
+
+.contact_form label input, textarea {
+    background-color: transparent;
+    border: 1px solid var(--background-5);
+    border-radius: 4px;
+    padding: 1em;
+    color: var(--text);
+    width: 60%;
+}
+
+#feedback-submit {
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.contact_p-block {
+    line-height: 1.6em;
+}
+
+/*
+- Checkout -
+*/
 
 :root {
     --background-0: #1F1F1F;

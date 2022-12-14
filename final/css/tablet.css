@@ -62,5 +62,21 @@
     width: 85%;
 }
 
+/*
+- Contact -
+*/
+.contact_main {
+    width: calc(100% - 4em);
+}
+
+.contact_form {
+    width: calc(85% - 6em);
+    padding: 3em;
+}
+
+.contact_form label {
+    line-height: 3em;
+}
+
 
 }

@@ -20,4 +20,15 @@
     width: calc(90% - 6em);
 }
 
+/*
+- Contact -
+*/
+.contact_main {
+    width: calc(80% - 4em);
+}
+
+.contact_form {
+    width: calc(70% - 6em);
+}
+
 }

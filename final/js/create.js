@@ -67,8 +67,8 @@
                             `client_id=${CLIENT_ID}&` +
                             `response_type=code&` +
                             `scope=${SCOPES}&` + 
-                            `redirect_uri=${MYURI}`;
-                            // `&show_dialog=true`;
+                            `redirect_uri=${MYURI}` +
+                            `&show_dialog=true`;
     }
     
     const getToken = async (authCode) => {
@@ -146,7 +146,6 @@
 
     const changeStickerTheme = (ctx, index) => {
         curStickerBG = index;
-        console.log(index)
         renderSticker(ctx);
     }
 })();

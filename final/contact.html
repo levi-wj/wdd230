@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/desktop.css">
 
     <script src="js/topmenu.js"></script>
-    <script src="js/create.js"></script>
     <script src="https://kit.fontawesome.com/7812c968c2.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
@@ -38,6 +37,38 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>
+    <main class="contact_main">
+        <h3>Contact us!</h3>
+        <p>Have questions about the our products or the website? Send us a message.</p>
+        <form method="GET" class="contact_form" action="#" onsubmit="document.getElementById('feedback-submit').value='Sent!'; return false">
+            <label for="first-name">First Name
+                <input type="text" id="first-name" name="first_name" placeholder="Joe" required>
+            </label>
+            <label for="last-name">Last Name
+                <input type="text" id="last-name" name="last_name" placeholder="Smith" required>
+            </label>
+            <label for="email">Email
+                <input type="email" id="email" name="email" placeholder="example@company.com" required>
+            </label>
+
+            <label for="content-input">Message Content
+                <textarea cols="60" rows="5" id="content-input" name="msgcontent"></textarea>
+            </label>
+
+            <input type="submit" id="feedback-submit" class="button-light" value="Send message">
+        </form>
+
+        <h3>About SpotiSticker</h3>
+        <p>Who I am and what I do</p>
+        <div class="contact_form">
+            <p class="contact_p-block">
+                Hi there! My name is Levi Jones and I'm the founder of SpotiSticker, a company that allows users to design and print their own custom stickers.
+                I started the company because I saw a need for a platform that makes it easy for people to create high-quality, personalized stickers that would allow them to express themselves and their music taste.
+                Music is such an essential way that people connect, and sometimes people may have musical tastes in common and they won't even realize it! This was the inspiration behind SpotiSticker.
+                Our goal is to provide our customers with the tools and support they need to unleash their creativity and share their musical designs with the world.
+            </p>
+        </div>
+    </main>
     <footer>
         <div class="footer_container--wide">
             <div class="header-logo">
