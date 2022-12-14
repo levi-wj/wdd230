@@ -89,4 +89,11 @@
     width: calc(100% - 6em);
 }
 
+/*
+- Confirmation -
+*/
+.confirmation_thanks {
+    width: 50%;
+}
+
 }

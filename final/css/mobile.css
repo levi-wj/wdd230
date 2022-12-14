@@ -486,6 +486,27 @@ footer hr {
 /*
 - Confirmation -
 */
+.confirmation_main {
+    min-height: 20em;
+    background-color: var(--background-1);
+    padding-top: 5em;
+}
+
+.confirmation_thanks {
+    background-color: var(--background-2);
+    width: 70%;
+    height: 50%;
+    padding: 1.5em;
+    margin: 0 auto;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, var(--purple), var(--blue));
+}
+
+.confirmation_thanks a {
+    color: var(--blue);
+}
 
 :root {
     --background-0: #1F1F1F;
