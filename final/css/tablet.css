@@ -78,5 +78,15 @@
     line-height: 3em;
 }
 
+/*
+- Checkout -
+*/
+.checkout_layout {
+    grid-template-columns: 3fr 1fr;
+}
+
+.checkout_main .checkout_form {
+    width: calc(100% - 6em);
+}
 
 }

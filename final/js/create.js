@@ -14,6 +14,7 @@
             authCode = CURURL.searchParams.get('code'),
             linkBtn = document.getElementById('link-spotify'),
             linkTxt = document.getElementById('link-spotify-text'),
+            buyBtn = document.getElementById('buy-button'),
             artistsRadio = document.getElementById('type-radio-artists'),
             tracksRadio = document.getElementById('type-radio-tracks'),
             stickerThemes = document.querySelectorAll('.create_theme-radio'),
@@ -41,6 +42,7 @@
                     let curIndex = i;
                     stickerThemes[i].onclick = () => { changeStickerTheme(canvasCtx, curIndex) };
                 }
+                buyBtn.onclick = () => { window.location = 'checkout.html'; };
 
                 renderSticker(canvasCtx);
 
@@ -51,6 +53,7 @@
             }
         } else {
             linkBtn.onclick = authorizeSpotify;
+            buyBtn.onclick = () => alert('No sticker has been created!');
         }
     });
 

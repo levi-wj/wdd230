@@ -26,7 +26,7 @@ a {
     text-decoration: none;
 }
 
-button {
+button, input[type="submit"] {
     cursor: pointer;
 }
 
@@ -71,7 +71,7 @@ footer hr {
 }
 
 .footer_social-icon:hover {
-    border: 1px solid white;
+    background-color:#5d5d5d50;
 }
 
 .hidden {
@@ -442,6 +442,49 @@ footer hr {
 
 /*
 - Checkout -
+*/
+.checkout_main {
+    background-color: var(--background-2);
+    padding: 2em;
+    border-radius: 4px;
+}
+
+.checkout_main .checkout_form {
+    margin: 0;
+    width: calc(100% - 2em);
+}
+
+.checkout_main .checkout_form-block {
+    margin-top: 5em;
+}
+
+#checkout-submit {
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 100%;
+}
+
+.checkout_layout {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 100%;
+}
+
+.checkout_details {
+    width: calc(100% - 2em);
+    border-radius: 8px;
+    background-color: var(--background-3);
+    border: 2px solid var(--background-4);
+    padding: 1em;
+}
+
+.checkout_details hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/*
+- Confirmation -
 */
 
 :root {

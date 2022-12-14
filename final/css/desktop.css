@@ -31,4 +31,11 @@
     width: calc(70% - 6em);
 }
 
+/*
+- Checkout -
+*/
+.checkout_main .checkout_form {
+    width: calc(100% - 6em);
+}
+
 }
