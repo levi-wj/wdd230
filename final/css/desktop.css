@@ -3,13 +3,21 @@
 /*
 - Index -
 */
-
 .index_pop-sticker-grid {
     grid-template-columns: repeat(4, 1fr);
 }
 
 .index_pop-sticker:nth-child(3) {
     display: block;
+}
+
+
+/*
+- Browse -
+*/
+.browse_main {
+    grid-template-columns: repeat(3, 1fr);
+    width: calc(90% - 6em);
 }
 
 }

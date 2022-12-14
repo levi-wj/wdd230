@@ -336,6 +336,52 @@ footer hr {
     bottom: 1em;
 }
 
+/*
+- Browse -
+*/
+.browse_main {
+    display: grid;
+    background-color: var(--background-1);
+    grid-template-columns: 100%;
+    margin: 2em auto;
+    width: calc(100% - 6em);
+    padding: 3em;
+    gap: 2em;
+}
+
+.browse_item {
+    background-color: var(--background-2);
+    position: relative;
+    min-height: 17em;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--background-3);
+}
+
+.browse_item:hover {
+    box-shadow: 2px 4px 2px #161616;
+}
+
+.browse_item img {
+    margin: 1em;
+    margin-top: 0;
+    width: calc(100% - 2em);
+    height: 75%;
+    object-fit: contain;
+}
+
+.browse_item p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: var(--text);
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 0 0 10px 10px;
+    width: calc(100% - 2em);
+    padding: 1em;
+    margin: 0;
+}
+
 :root {
     --background-0: #1F1F1F;
     --background-1: #272727;
