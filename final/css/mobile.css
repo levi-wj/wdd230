@@ -9,6 +9,7 @@ body {
 header {
     position: sticky;
     top: 0;
+    z-index: 2;
     background-color: var(--background-0);
     border-bottom: 1px solid var(--background-1)
 }
@@ -29,6 +30,19 @@ button {
     cursor: pointer;
 }
 
+.button-light {
+    padding: 1em;
+    background-color: transparent;
+    border: 1px solid var(--text);
+    color: var(--text);
+    border-radius: 4px;
+}
+
+.button-light:hover {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
 footer {
     background-color: var(--background-1);
     padding: 1em;
@@ -36,9 +50,28 @@ footer {
 }
 
 footer hr {
-    background-image: linear-gradient(transparent, transparent), linear-gradient(transparent, transparent), linear-gradient(to right, var(--purple), var(--blue));;
     margin-top: 2em;
+    border-color: var(--background-4);
     margin-bottom: 2em;
+}
+
+.footer_container--wide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_social-icon {
+    font-size: xx-large;
+    color: white;
+    margin-right: 1em;
+    margin-top: .2em;
+    padding: .25em;
+    border-radius: 100%;
+    border: 1px solid var(--background-1);
+}
+
+.footer_social-icon:hover {
+    border: 1px solid white;
 }
 
 .hidden {
@@ -113,12 +146,34 @@ footer hr {
 - Index -
 */
 
-.index_hero-container {
+#index_hero-img img {
     width: 100%;
 }
 
+.index_hero-container {
+    width: 100%;
+    position: relative;
+}
+
+.index_hero-container h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: calc(100% - 2em);
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: var(--text);
+    background-color:rgba(0, 0, 0, 0.404);
+    padding: 1em;
+    font-size: 3.3vw;
+}
+
+.index_hero-container h2:hover {
+    background-color: #288df84f;
+}
+
 .index_popular-container {
-    padding: 3em 1.5em 3em 1.5em;
+    padding: 4em 1.5em 3em 1.5em;
     background-color: var(--blue);
     box-shadow: 20px 20px var(--background-0);
 }
@@ -142,18 +197,25 @@ footer hr {
 }
 
 .index_pop-sticker {
-    border: 1px solid var(--text);
+    border: 1px solid white;
+    height: 9.5em;
     padding: 1em;
     border-radius: 4px;
     text-align: center;
 }
 
+.index_pop-sticker.index_more div {
+    margin-top: 3.5em;
+}
+
 .index_pop-sticker img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .index_tesimonials-container {
-    padding: 3em 1.5em 3em 1.5em;
+    padding: 4em 1.5em 4em 1.5em;
     background-color: var(--background-2);
 }
 
@@ -198,6 +260,7 @@ footer hr {
 
 .create_main {
     display: flex;
+    max-height: 40em;
     background-color: var(--background-1);
 }
 
@@ -206,6 +269,7 @@ footer hr {
     width: 20%;
     min-width: 10em;
     padding: 1em;
+    overflow-y: scroll;
 }
 
 .create_sidebar-section {
@@ -217,7 +281,7 @@ footer hr {
     opacity: 0;
 }
 
-.create_sticker-type {
+.create_type-label {
     display: block;
     border: 1px solid var(--blue);
     padding: 1em;
@@ -226,8 +290,20 @@ footer hr {
     cursor: pointer;
 }
 
-.create_sidebar input[type="radio"]:checked + label {
+.create_type-radio:checked + label {
     background-color: var(--blue);
+}
+
+.create_theme-label {
+    width: 96%;
+    border: 3px solid var(--background-5);
+    border-radius: 25px;
+    margin: .3em;
+    cursor: pointer;
+}
+
+.create_theme-radio:checked + label img {
+    border-color: var(--blue);
 }
 
 #link-spotify {
@@ -237,8 +313,13 @@ footer hr {
     background-color: var(--green);
 }
 
-.create_canvas {
-    background-color: var(--background-3);
+.create_canvas-container {
+    background-size: 40px 40px;
+    background-repeat: repeat;
+    background-image:
+        linear-gradient(to right, var(--background-3) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--background-3) 1px, transparent 1px);
+    background-color: var(--background-1);
     position: relative;
     width: 80%;
 }
@@ -249,12 +330,19 @@ footer hr {
     right: 1em;
 }
 
+#buy-button {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
 :root {
     --background-0: #1F1F1F;
     --background-1: #272727;
     --background-2: #303030;
     --background-3: #3d3d3d;
     --background-4: #4a4a4a;
+    --background-5: #5b5b5b;
 
     --purple: #B43BFF;
     --blue: #288DF8;

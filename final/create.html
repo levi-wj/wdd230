@@ -46,26 +46,39 @@
             </div>
             <div class="create_sidebar-section">
                 <p>Sticker type:</p>
-                <input type="radio" id="sticker-artists" name="sticker-type" value="artists">
-                <label for="sticker-artists" class="create_sticker-type">Artists</label>
-                <input type="radio" id="sticker-albums" name="sticker-type" value="albums">
-                <label for="sticker-albums" class="create_sticker-type">Albums</label>
-                <input type="radio" id="sticker-songs" name="sticker-type" value="songs">
-                <label for="sticker-songs" class="create_sticker-type">Songs</label>
+                <input type="radio" id="type-radio-artists" name="sticker-type" class="create_type-radio" value="artists" checked="true">
+                <label for="type-radio-artists" class="create_type-label">Artists</label>
+                <input type="radio" id="type-radio-tracks" name="sticker-type" class="create_type-radio" value="songs">
+                <label for="type-radio-tracks" class="create_type-label">Songs</label>
             </div>
 
-            <div class="create_sidebar-section">
+            <div id="sticker-themes" class="create_sidebar-section">
                 <p>Sticker theme:</p>
+                <input type="radio" id="sticker-theme-0" class="create_theme-radio" name="sticker-theme" value="artists" checked="true">
+                <label for="sticker-theme-0"><img src="img/stickerbg0.webp" class="create_theme-label"></label>
+                <input type="radio" id="sticker-theme-1" class="create_theme-radio" name="sticker-theme" value="artists">
+                <label for="sticker-theme-1"><img src="img/stickerbg1.webp" class="create_theme-label"></label>
+                <input type="radio" id="sticker-theme-2" class="create_theme-radio" name="sticker-theme" value="artists">
+                <label for="sticker-theme-2"><img src="img/stickerbg2.webp" class="create_theme-label"></label>
+                <input type="radio" id="sticker-theme-3" class="create_theme-radio" name="sticker-theme" value="artists">
+                <label for="sticker-theme-3"><img src="img/stickerbg3.webp" class="create_theme-label"></label>
             </div>
         </div>
-        <div class="create_canvas">
+        <div id="create-canvas-container" class="create_canvas-container">
             <canvas id="create-canvas"></canvas>
-            <button>Buy</button>
+            <button id="buy-button" class="button-light"><i class="fa fa-shopping-cart"></i> Checkout</button>
         </div>
     </main>
     <footer>
-        <div class="footer__container--wide">
-            <img src="img/logowhite.svg" class="footer__logo" alt="Chamber logo">
+        <div class="footer_container--wide">
+            <div class="header-logo">
+                <img src="img/logolight.svg" class="index_header-logo" height="60" width="90" alt="Logo">
+                <h2>SpotiSticker</h2>
+            </div>
+            <div>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter footer_social-icon"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram footer_social-icon"></i></a>
+            </div>
         </div>
         <hr>
         <div class="footer__text">&copy;2022 | Levi Jones | WDD230 Project</div>
