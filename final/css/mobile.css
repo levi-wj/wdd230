@@ -17,8 +17,8 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 a {
@@ -165,7 +165,7 @@ footer hr {
     color: var(--text);
     background-color:rgba(0, 0, 0, 0.404);
     padding: 1em;
-    font-size: 3.3vw;
+    font-size: calc(14px + 3vw);
 }
 
 .index_hero-container h2:hover {
@@ -197,9 +197,10 @@ footer hr {
 }
 
 .index_pop-sticker {
-    border: 1px solid white;
+    border: 1px solid #6ba4f3;
+    background-color: #3030302c;
     height: 9.5em;
-    padding: 1em;
+    padding: .75em;
     border-radius: 4px;
     text-align: center;
 }
@@ -326,8 +327,8 @@ footer hr {
 
 #buy-button {
     position: absolute;
-    right: 1em;
-    bottom: 1em;
+    right: 2em;
+    bottom: 2em;
 }
 
 /*

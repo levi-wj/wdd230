@@ -1,8 +1,13 @@
-@media screen and (min-width: 42rem) {
+@media screen and (min-width: 45rem) {
 
 /*
 - Navbar -
 */ 
+nav {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
 .navbar-desktop {
     display: flex;
 }
@@ -43,6 +48,10 @@
 
 .index_pop-sticker-grid {
     grid-template-columns: repeat(3, 1fr);
+}
+
+.index_pop-sticker {
+    padding: 1em;
 }
 
 .index_tesimonials-container {

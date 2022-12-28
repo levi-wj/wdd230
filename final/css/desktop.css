@@ -1,4 +1,9 @@
-@media screen and (min-width: 65rem) {
+@media screen and (min-width: 62rem) {
+
+nav {
+    padding-left: 4em;
+    padding-right: 4em;
+}
 
 /*
 - Index -
