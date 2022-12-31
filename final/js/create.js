@@ -66,12 +66,13 @@
     }
 
     const authorizeSpotify = () => {
-        window.location = `https://accounts.spotify.com/authorize?` +
-                            `client_id=${CLIENT_ID}&` +
-                            `response_type=code&` +
-                            `scope=${SCOPES}&` + 
-                            `redirect_uri=${MYURI}` +
-                            `&show_dialog=true`;
+        window.location = 
+            `https://accounts.spotify.com/authorize?` +
+            `client_id=${CLIENT_ID}&` +
+            `response_type=code&` +
+            `scope=${SCOPES}&` + 
+            `redirect_uri=${MYURI}` +
+            `&show_dialog=true`;
     }
     
     const getToken = async (authCode) => {
@@ -81,16 +82,20 @@
                 'Authorization': 'Basic ' + btoa(CLIENT_ID + ':' + CLIENT_SECRET),
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
-            body: `grant_type=authorization_code&` +
-                    `code=${authCode}&` +
-                    `redirect_uri=${MYURI}`
+            body: `grant_type=authorization_code` +
+                    `&code=${authCode}` +
+                    `&redirect_uri=${MYURI}`
         });
         const tokenJSON = await res.json();
         return tokenJSON.access_token;
     }
 
     const getUserTop = async (token, type) => {
-        let topRes = await fetch(`https://api.spotify.com/v1/me/top/${type}?time_range=medium_term&limit=3`, {
+        let topRes = await fetch(
+            `https://api.spotify.com/v1/me/top/${type}` +
+            `?time_range=medium_term` +
+            `&limit=3`,
+        {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -133,11 +138,10 @@
     }
 
     const getImagesFromAPIData = (apiData) => {
+        // If album art exists, we have 'tracks' selected. Else, return artist images
         if (apiData.items.length && apiData.items[0].album) {
-            // Tracks
             return apiData.items.map(e => e.album.images[1].url);
         } else {
-            // Artists
             return apiData.items.map(e => e.images[1].url);
         }
     }
